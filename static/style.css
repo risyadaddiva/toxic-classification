@@ -1,0 +1,117 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header/Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Main Content Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+h2 {
+    color: #0d6efd;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Form Styling */
+textarea {
+    width: 95%;
+    height: 120px;
+    padding: 15px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Result Box Styling */
+.result-box {
+    border: 1px solid #e0e0e0;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.text-input {
+    font-style: italic;
+    color: #555;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+.result-box h3 {
+    color: #dc3545; /* Merah untuk hasil yang toxic */
+    font-size: 1.75rem;
+    margin-top: 1rem;
+}
+
+/* Link Styling */
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

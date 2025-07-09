@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Sentimen - Naive Bayes</title>
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Analisis Sentimen Ujaran</h1>
+    </header>
+
+    <div class="container">
+        <h2>Deteksi Kata Toxic</h2>
+        <p>Masukkan sebuah kalimat dalam Bahasa Indonesia untuk dianalisis tingkat Toxic-nya menggunakan metode Naive Bayes.</p>
+        <form action="{{ url_for('predict') }}" method="post">
+            <textarea name="message" placeholder="Contoh: dasar kau pemalas, tidak berguna sama sekali" required></textarea><br>
+            <input type="submit" class="btn" value="Analisis Teks">
+        </form>
+    </div>
+
+        <!-- team section -->
+
+    <section class="team_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Creator</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mx-auto">
+            <div class="box">
+              <div class="img-box" style="width: 120px; height: 120px; overflow: hidden; margin: 0 auto;">
+                <img
+                  src="{{ url_for('static', filename='img.jpg') }}"
+                  alt=""
+                  style="width: 100%; height: 100%; object-fit: cover;"
+                />
+              </div>
+              <div class="detail-box">
+                <h5>Risyad Addiva Hadid</h5>
+                <h5>1217050125</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end team section -->
+</body>
+</html>

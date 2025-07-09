@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Analisis</title>
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Analisis Sentimen Ujaran</h1>
+    </header>
+
+    <div class="container">
+        <h2>Hasil Analisis Sentimen</h2>
+        <div class="result-box">
+            <p>Teks yang dianalisis:</p>
+            <p class="text-input">"{{ text }}"</p>
+            <hr>
+            <p>Hasil Prediksi:</p>
+            <h3>{{ prediction }}</h3>
+        </div>
+        <br>
+        <a href="/" class="btn">Analisis Teks Lain</a>
+    </div>
+</body>
+</html>
